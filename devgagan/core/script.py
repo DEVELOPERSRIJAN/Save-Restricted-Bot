@@ -3,13 +3,17 @@
 # ------------------------------------------------------------ #
 
 START_TXT = """
-Hi, welcome to Advance Content Saver Bot, designed to save restricted messages from public/private channels and private groups. First login in bot by /login then send post link.
+Welcome to Restricted Content Saver Bot.🤟🏻✨
+I can save restricted messages from public/private channels and groups.
+
+First of all, send /login and complete the login process. ☺️
 """
 
 FORCE_MSG = """
 Hey {},
 
-According to my database, you've not joined the updates channel yet. If you want to use me, then join the updates channel and start me again!
+According to my database, you've not joined the updates channel yet. 
+If you want to use me, then join the channel and send /start again
 """
 
 HELP_TXT = """
