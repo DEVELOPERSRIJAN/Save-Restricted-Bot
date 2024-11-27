@@ -3,13 +3,17 @@
 # ------------------------------------------------------------ #
 
 START_TXT = """
-Hi, welcome to Advance Content Saver Bot, designed to save restricted messages from public/private channels and private groups. First login in bot by /login then send post link.
+Welcome to Restricted Content Saver Bot.🤟🏻✨
+I can save restricted messages from public/private channels and groups.
+
+First of all, send /login and complete the login process. ☺️
 """
 
 FORCE_MSG = """
 Hey {},
 
-According to my database, you've not joined the updates channel yet. If you want to use me, then join the updates channel and start me again!
+According to my database, you've not joined the updates channel yet.
+If you want to use me, then join the updates channel and send /start again.
 """
 
 HELP_TXT = """
@@ -29,7 +33,7 @@ HELP2_TXT = """
 
 FOR PUBLIC AND PRIVATE CHANNEL OR GROUP:
 - First, log in.
-- Then send the message link of any channel that you've joined in your login account.
+- Then send the message link of any channel that you've joined from the account you logged in.
 
 FOR BOT:
 - Send the link in this format: https://t.me/b/bot_username/message_id (use Plus Messenger for message_id)
@@ -44,6 +48,8 @@ But, send it like this: https://t.me/c/xxxxxxx/second_id (remove first id and on
 - If the bot says "Have you joined the channel?" then just log in again to the bot and try.
 
 - If your batch is stuck, then use /stop.
+
+- Wasn't helpful? ask @SrijanMajumdar
 """
 
 ADMIN_TXT = """
