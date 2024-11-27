@@ -13,3 +13,4 @@ PyPDF2
 reportlab
 PyMuPDF
 cryptg
+gunicorn
