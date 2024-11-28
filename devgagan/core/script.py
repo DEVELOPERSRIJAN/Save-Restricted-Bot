@@ -3,67 +3,67 @@
 # ------------------------------------------------------------ #
 
 START_TXT = """
-Welcome to Restricted Content Saver Bot.🤟🏻✨
-I can save restricted messages from public/private channels and groups.
+ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ʀᴇsᴛʀɪᴄᴛᴇᴅ sᴀᴠᴇʀ ʙᴏᴛ.✨
+ɪ ᴄᴀɴ sᴀᴠᴇ ʀᴇsᴛʀɪᴄᴛᴇᴅ ᴍᴇssᴀɢᴇs ғʀᴏᴍ ᴘᴜʙʟɪᴄ/ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ɢʀᴏᴜᴘs.
 
-First of all, send /login and complete the login process. ☺️
+ғɪʀsᴛ ᴏғ ᴀʟʟ, sᴇɴᴅ /login ᴀɴᴅ ᴄᴏᴍᴘʟᴇᴛᴇ ᴛʜᴇ ʟᴏɢɪɴ ᴘʀᴏᴄᴇss. ☺️
 """
 
 FORCE_MSG = """
-Hey {},
+ʜᴇʏ {},
 
-According to my database, you've not joined the updates channel yet. 
-If you want to use me, then join the channel and send /start again
+ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ, ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ʏᴇᴛ. 
+ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ, ᴛʜᴇɴ ᴊᴏɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ sᴇɴᴅ /start ᴀɢᴀɪɴ.
 """
 
 HELP_TXT = """
-HELP SECTION 📝
+ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ 📝
 
-🛠️ /settings - Open settings to set your requirements.
+🛠️ /settings - ᴏᴘᴇɴ sᴇᴛᴛɪɴɢs ᴛᴏ sᴇᴛ ʏᴏᴜʀ ʀᴇǫᴜɪʀᴇᴍᴇɴᴛs.
 
-🔒 /login - Login to your userbot session.
+🔒 /login - ʟᴏɢɪɴ ᴛᴏ ʏᴏᴜʀ ᴜsᴇʀʙᴏᴛ sᴇssɪᴏɴ.
 
-📦 /batch - Download bulk links in a systematic way.
+📦 /batch - ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜʟᴋ ʟɪɴᴋs ɪɴ ᴀ sʏsᴛᴇᴍᴀᴛɪᴄ ᴡᴀʏ.
 
-⛔ /cancel - Stop batch processing.
+⛔ /cancel - sᴛᴏᴘ ʙᴀᴛᴄʜ ᴘʀᴏᴄᴇssɪɴɢ.
 """
 
 HELP2_TXT = """
-🕵️ Help:
+🕵️ ʜᴇʟᴘ:
 
-FOR PUBLIC AND PRIVATE CHANNEL OR GROUP:
-- First, log in.
-- Then send the message link of any channel that you've joined in your login account.
+ғᴏʀ ᴘᴜʙʟɪᴄ ᴀɴᴅ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴏʀ ɢʀᴏᴜᴘ:
+- ғɪʀsᴛ, ʟᴏɢ ɪɴ.
+- ᴛʜᴇɴ sᴇɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ ʟɪɴᴋ ᴏғ ᴀɴʏ ᴄʜᴀɴɴᴇʟ ᴛʜᴀᴛ ʏᴏᴜ'ᴠᴇ ᴊᴏɪɴᴇᴅ ɪɴ ʏᴏᴜʀ ʟᴏɢɪɴ ᴀᴄᴄᴏᴜɴᴛ.
 
-FOR BOT:
-- Send the link in this format: https://t.me/b/bot_username/message_id (use Plus Messenger for message_id)
+ғᴏʀ ʙᴏᴛ:
+- sᴇɴᴅ ᴛʜᴇ ʟɪɴᴋ ɪɴ ᴛʜɪs ғᴏʀᴍᴀᴛ: ʜᴛᴛᴘs://ᴛ.ᴍᴇ/ʙ/ʙᴏᴛ_ᴜsᴇʀɴᴀᴍᴇ/ᴍᴇssᴀɢᴇ_ɪᴅ (ᴜsᴇ ᴘʟᴜs ᴍᴇssᴇɴɢᴇʀ ғᴏʀ ᴍᴇssᴀɢᴇ_ɪᴅ)
 
-FOR GROUP TOPIC:
-- (For Private Group) Group topic link is like: https://t.me/c/xxxxxxxxx/first_id/second_id
-But, send it like this: https://t.me/c/xxxxxxx/second_id (remove first id and one /)
-- (For Public Group) Follow the private link step but remove "/c" from the link. Ex - https://t.me/username/second_id
+ғᴏʀ ɢʀᴏᴜᴘ ᴛᴏᴘɪᴄ:
+- (ғᴏʀ ᴘʀɪᴠᴀᴛᴇ ɢʀᴏᴜᴘ) ɢʀᴏᴜᴘ ᴛᴏᴘɪᴄ ʟɪɴᴋ ɪs ʟɪᴋᴇ: ʜᴛᴛᴘs://ᴛ.ᴍᴇ/ᴄ/xxxxxxxxx/ғɪʀsᴛ_ɪᴅ/sᴇᴄᴏɴᴅ_ɪᴅ
+ʙᴜᴛ, sᴇɴᴅ ɪᴛ ʟɪᴋᴇ ᴛʜɪs: ʜᴛᴛᴘs://ᴛ.ᴍᴇ/ᴄ/xxxxxxx/sᴇᴄᴏɴᴅ_ɪᴅ (ʀᴇᴍᴏᴠᴇ ғɪʀsᴛ ɪᴅ ᴀɴᴅ ᴏɴᴇ /)
+- (ғᴏʀ ᴘᴜʙʟɪᴄ ɢʀᴏᴜᴘ) ғᴏʟʟᴏᴡ ᴛʜᴇ ᴘʀɪᴠᴀᴛᴇ ʟɪɴᴋ sᴛᴇᴘ ʙᴜᴛ ʀᴇᴍᴏᴠᴇ "/ᴄ" ғʀᴏᴍ ᴛʜᴇ ʟɪɴᴋ. ᴇx - ʜᴛᴛᴘs://ᴛ.ᴍᴇ/ᴜsᴇʀɴᴀᴍᴇ/sᴇᴄᴏɴᴅ_ɪᴅ
 
-#FAQ:
+#ғᴀǫ:
 
-- If the bot says "Have you joined the channel?" then just log in again to the bot and try.
+- ɪғ ᴛʜᴇ ʙᴏᴛ sᴀʏs "ʜᴀᴠᴇ ʏᴏᴜ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ?" ᴛʜᴇɴ ᴊᴜsᴛ ʟᴏɢ ɪɴ ᴀɢᴀɪɴ ᴛᴏ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ᴛʀʏ.
 
-- If your batch is stuck, then use /stop.
+- ɪғ ʏᴏᴜʀ ʙᴀᴛᴄʜ ɪs sᴛᴜᴄᴋ, ᴛʜᴇɴ ᴜsᴇ /sᴛᴏᴘ.
 """
 
 ADMIN_TXT = """
-ADMINS PANEL 🛠️
+ᴀᴅᴍɪɴs ᴘᴀɴᴇʟ 🛠️
 
-➕ /add - Add user ID to the premium section.
+➕ /add - ᴀᴅᴅ ᴜsᴇʀ ɪᴅ ᴛᴏ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ sᴇᴄᴛɪᴏɴ.
 
-➖ /rem - Remove user ID from the premium section.
+➖ /rem - ʀᴇᴍᴏᴠᴇ ᴜsᴇʀ ɪᴅ ғʀᴏᴍ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ sᴇᴄᴛɪᴏɴ.
 
-🔍 /check - Check if a user ID is in the premium section.
+🔍 /check - ᴄʜᴇᴄᴋ ɪғ ᴀ ᴜsᴇʀ ɪᴅ ɪs ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ sᴇᴄᴛɪᴏɴ.
 
-📢 /broadcast - Broadcast a message without a forward tag.
+📢 /broadcast - ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜᴏᴜᴛ ᴀ ғᴏʀᴡᴀʀᴅ ᴛᴀɢ.
 
-📣 /announce - Broadcast a message with a forward tag.
+📣 /announce - ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ᴀ ғᴏʀᴡᴀʀᴅ ᴛᴀɢ.
 
-📊 /stats - Check your bot's stats.
+📊 /stats - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ʙᴏᴛ's sᴛᴀᴛs.
 """
 
 SETTINGS_TXT = """
