@@ -14,7 +14,7 @@ from pyrogram.enums import MessageMediaType
 from devgagan.core.func import progress_bar, video_metadata, screenshot
 from devgagan.core.mongo import db
 from pyrogram.types import Message
-from config import MONGO_DB as MONGODB_CONNECTION_STRING, LOG_GROUP
+from config import MONGO_DB as MONGODB_CONNECTION_STRING, LOG_GROUP, SECONDS
 import cv2
 from telethon import events, Button
     
@@ -52,10 +52,12 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
             if msg.empty is not None:
                 return None                          
             if msg.media:
+                snt_msgs = [] #AutoDeleter
                 if msg.media == MessageMediaType.WEB_PAGE:
                     target_chat_id = user_chat_ids.get(chatx, chatx)
                     edit = await app.edit_message_text(target_chat_id, edit_id, "Cloning...")
                     devgaganin = await app.send_message(sender, msg.text.markdown)
+                    snt_msgs.append(devgaganin) #AutoDeleter
                     if msg.pinned_message:
                         try:
                             await devgaganin.pin(both_sides=True)
@@ -63,7 +65,14 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                             await devgaganin.pin()
                     await devgaganin.copy(LOG_GROUP)                  
                     await edit.delete()
+                    #----------AutoDelete----------
+                    for devgaganin in snt_msgs:
+                        try:
+                            await devgaganin.delete()
+                        except:
+                            pass
                     return
+                    #-----------------------------
             if not msg.media:
                 if msg.text:
                     target_chat_id = user_chat_ids.get(chatx, chatx)
