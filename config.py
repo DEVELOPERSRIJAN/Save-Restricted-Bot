@@ -12,3 +12,6 @@ LOG_GROUP = getenv("LOG_GROUP", "")
 CHANNEL_ID = int(getenv("CHANNEL_ID", ""))
 FREEMIUM_LIMIT = int(getenv("FREEMIUM_LIMIT", "0"))
 PREMIUM_LIMIT = int(getenv("PREMIUM_LIMIT", "500"))
+
+#AutoDeleteTime
+SECONDS = int(getenv("SECONDS", "300")) #5_minutes
