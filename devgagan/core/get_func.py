@@ -66,6 +66,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                     await devgaganin.copy(LOG_GROUP)                  
                     await edit.delete()
                     #----------AutoDelete----------
+                    await asyncio.sleep(SECONDS)
                     for devgaganin in snt_msgs:
                         try:
                             await devgaganin.delete()
