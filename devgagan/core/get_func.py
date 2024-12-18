@@ -76,10 +76,12 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                     return
                     #-----------------------------
             if not msg.media:
+                snt_msgs = [] #AutoDeleter
                 if msg.text:
                     target_chat_id = user_chat_ids.get(chatx, chatx)
                     edit = await app.edit_message_text(target_chat_id, edit_id, "Cloning...")
                     devgaganin = await app.send_message(sender, msg.text.markdown)
+                    snt_msgs.append(devgaganin) #AutoDeleter
                     if msg.pinned_message:
                         try:
                             await devgaganin.pin(both_sides=True)
@@ -87,6 +89,13 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
                             await devgaganin.pin()
                     await devgaganin.copy(LOG_GROUP)
                     await edit.delete()
+                    await message.reply_text(f"Content will be deleted in 5 minutes.\nForward to saved messages", parse_mode=ParseMode.MARKDOWN)
+                    await asyncio.sleep(SECONDS)
+                    for devgaganin in snt_msgs:
+                        try:
+                            await devgaganin.delete()
+                        except:
+                            pass
                     return
             
             edit = await app.edit_message_text(sender, edit_id, "Trying to Download...")
